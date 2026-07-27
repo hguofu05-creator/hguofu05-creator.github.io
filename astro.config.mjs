@@ -16,7 +16,8 @@ export default defineConfig({
   integrations: [tailwind()],
 
   build: {
-    format: 'directory',
+    // 用扁平 .html 输出，兼容「只服务显式文件」的静态服务器（CloudStudio / GitHub Pages 均可）
+    format: 'file',
   },
   // 关闭 Astro 自带的图片服务（我们用自己生成的 WebP，无需 astro:assets）
   image: { service: { entrypoint: undefined } },

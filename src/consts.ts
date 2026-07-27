@@ -49,7 +49,7 @@ export const SITE = {
 /** 导航菜单 */
 export const NAV = [
   { label: '首页', href: '/' },
-  { label: '作品集', href: '/gallery' },
-  { label: '关于', href: '/about' },
-  { label: '联系', href: '/contact' },
+  { label: '作品集', href: '/gallery.html' },
+  { label: '关于', href: '/about.html' },
+  { label: '联系', href: '/contact.html' },
 ];

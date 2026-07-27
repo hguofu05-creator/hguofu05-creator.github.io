@@ -84,17 +84,17 @@ const exifRows = [
     <nav class="mt-14 flex items-center justify-between border-t border-white/5 pt-6 text-sm">
       {
         prev ? (
-          <a href={`/photo/${prev.id}`} class="text-muted transition-colors hover:text-fg">
+          <a href={`/photo/${prev.id}.html`} class="text-muted transition-colors hover:text-fg">
             ← {prev.title}
           </a>
         ) : (
           <span />
         )
       }
-      <a href="/gallery" class="text-muted transition-colors hover:text-fg">返回作品集</a>
+      <a href="/gallery.html" class="text-muted transition-colors hover:text-fg">返回作品集</a>
       {
         next ? (
-          <a href={`/photo/${next.id}`} class="text-muted transition-colors hover:text-fg">
+          <a href={`/photo/${next.id}.html`} class="text-muted transition-colors hover:text-fg">
             {next.title} →
           </a>
         ) : (
