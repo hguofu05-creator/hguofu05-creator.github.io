@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../consts';
+---
+
+<BaseLayout title="联系" description={`联系 ${SITE.name}`}>
+  <section class="mx-auto flex max-w-2xl flex-col items-center px-4 py-24 text-center">
+    <h1 class="font-serif text-4xl text-fg">联系我</h1>
+    <p class="mt-4 max-w-prose text-muted">
+      欢迎约拍、合作或只是聊聊摄影。也可以通过下面的社交媒体找到我。
+    </p>
+
+    <!-- 邮箱 -->
+    <a
+      href={`mailto:${SITE.email}`}
+      class="mt-10 border border-white/15 px-6 py-3 text-fg transition-colors hover:border-accent hover:text-accent"
+    >
+      {SITE.email}
+    </a>
+
+    <!-- 社交媒体图标链接 -->
+    <ul class="mt-12 flex flex-wrap justify-center gap-4">
+      {
+        SITE.socials.map((s) => (
+          <li>
+            <a
+              href={s.url}
+              target="_blank"
+              rel="noopener"
+              class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 text-sm text-muted transition-colors hover:border-accent hover:text-accent"
+              aria-label={s.name}
+            >
+              {s.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>

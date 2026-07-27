@@ -1,0 +1,12 @@
+# build output
+dist/
+# dependencies
+node_modules/
+# astro
+.astro/
+# os
+.DS_Store
+Thumbs.db
+# 原始大图不入库（单独保存在你的桌面/移动硬盘）
+# 已生成的 WebP 在 public/images/photos/ ，需要入库
+src/assets/raw/

@@ -1,0 +1,25 @@
+---
+import { SITE } from '../consts';
+---
+
+<footer class="border-t border-white/5 bg-bg-2">
+  <div
+    class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-10 text-sm text-muted sm:flex-row sm:items-center sm:justify-between"
+  >
+    <p>© {SITE.year} {SITE.name}. 保留所有权利。</p>
+    <ul class="flex flex-wrap gap-5">
+      {
+        SITE.socials.map((s) => (
+          <li>
+            <a href={s.url} target="_blank" rel="noopener" class="transition-colors hover:text-fg">
+              {s.name}
+            </a>
+          </li>
+        ))
+      }
+      <li>
+        <a href={`mailto:${SITE.email}`} class="transition-colors hover:text-fg">{SITE.email}</a>
+      </li>
+    </ul>
+  </div>
+</footer>

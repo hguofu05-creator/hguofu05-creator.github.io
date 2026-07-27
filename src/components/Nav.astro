@@ -1,0 +1,33 @@
+---
+import { NAV, SITE } from '../consts';
+
+const path = Astro.url.pathname;
+// 判断当前高亮：首页精确匹配，其余用「开头匹配」
+function isActive(href: string): boolean {
+  if (href === '/') return path === '/';
+  return path.startsWith(href);
+}
+---
+
+<header class="sticky top-0 z-50 border-b border-white/5 bg-bg/80 backdrop-blur">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+    <a href="/" class="font-serif text-lg tracking-wide text-fg">{SITE.name}</a>
+    <ul class="flex items-center gap-5 text-sm text-muted sm:gap-8">
+      {
+        NAV.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class:list={[
+                'transition-colors hover:text-fg',
+                isActive(item.href) ? 'text-fg' : 'text-muted',
+              ]}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>

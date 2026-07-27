@@ -1,0 +1,67 @@
+---
+import { CATEGORIES } from '../lib/photos';
+// 筛选按钮：点击后过滤 #photo-grid 里带 data-category 的卡片
+---
+
+<div class="flex flex-wrap gap-2" role="tablist" aria-label="作品分类筛选">
+  {
+    CATEGORIES.map((c, i) => (
+      <button
+        type="button"
+        data-filter={c.key}
+        class:list={[
+          'filter-btn rounded-full border px-4 py-1.5 text-sm transition-colors',
+          i === 0
+            ? 'border-accent text-fg'
+            : 'border-white/10 text-muted hover:border-white/30 hover:text-fg',
+        ]}
+        aria-pressed={i === 0 ? 'true' : 'false'}
+      >
+        {c.label}
+      </button>
+    ))
+  }
+</div>
+
+<script>
+  const grid = document.getElementById('photo-grid');
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  if (grid && buttons.length) {
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-category]'));
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const HIDE_DELAY = reduce ? 0 : 350;
+
+    function applyFilter(key: string) {
+      cards.forEach((card) => {
+        const cat = card.dataset.category;
+        const show =
+          key === 'all' ||
+          (key === 'nature' && cat !== 'people') ||
+          cat === key;
+        if (show) {
+          card.classList.remove('display-none');
+          // 强制回流，让 transition 生效
+          void card.offsetWidth;
+          card.classList.remove('is-hidden');
+        } else {
+          card.classList.add('is-hidden');
+          window.setTimeout(() => card.classList.add('display-none'), HIDE_DELAY);
+        }
+      });
+    }
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        buttons.forEach((b) => {
+          b.classList.remove('border-accent', 'text-fg');
+          b.classList.add('border-white/10', 'text-muted');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('border-accent', 'text-fg');
+        btn.classList.remove('border-white/10', 'text-muted');
+        btn.setAttribute('aria-pressed', 'true');
+        applyFilter(btn.dataset.filter || 'all');
+      });
+    });
+  }
+</script>

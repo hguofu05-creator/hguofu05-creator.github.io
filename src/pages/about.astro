@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../consts';
+---
+
+<BaseLayout title="关于" description={`关于 ${SITE.name}`}>
+  <section class="mx-auto max-w-3xl px-4 py-16 sm:py-24">
+    <h1 class="mb-12 text-center font-serif text-4xl text-fg">关于我</h1>
+
+    <div class="flex flex-col items-center gap-10 reveal sm:flex-row sm:items-start">
+      <!-- 摄影师照片：把一张图导出为 WebP 放到 public/images/about.webp -->
+      <img
+        src={SITE.avatar}
+        alt={`${SITE.name} 的照片`}
+        class="h-40 w-40 flex-none rounded-full object-cover ring-1 ring-white/10"
+        width="160"
+        height="160"
+      />
+      <div class="space-y-4">
+        <h2 class="font-serif text-2xl text-fg">{SITE.name}</h2>
+        {
+          SITE.bio.map((p) => (
+            <p class="max-w-prose leading-relaxed text-fg/90">{p}</p>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- 设备列表 -->
+    <div class="mt-16 reveal">
+      <h2 class="mb-4 font-serif text-xl text-fg">装备</h2>
+      <ul class="space-y-2 text-muted">
+        {SITE.gear.map((g) => <li class="border-b border-white/5 pb-2">· {g}</li>)}
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===========================================================
+   基础排版
+   =========================================================== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+  /* 选区颜色：克制 */
+  ::selection {
+    background: oklch(0.75 0.15 240 / 0.3);
+  }
+}
+
+/* ===========================================================
+   滚动淡入（Scroll Reveal）
+   元素加上 class="reveal"，进入视口后加 .is-visible
+   =========================================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ===========================================================
+   图片卡片：悬停轻微缩放 + 标题渐显
+   =========================================================== */
+.photo-card .photo-img {
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.photo-card:hover .photo-img,
+.photo-card:focus-visible .photo-img {
+  transform: scale(1.04);
+}
+.photo-card .photo-overlay {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.photo-card:hover .photo-overlay,
+.photo-card:focus-visible .photo-overlay {
+  opacity: 1;
+}
+
+/* 分类筛选时的平滑过渡 */
+.photo-card {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.photo-card.is-hidden {
+  opacity: 0;
+  transform: scale(0.98);
+  pointer-events: none;
+}
+/* 真正从布局移除（过渡结束后由 JS 加上） */
+.photo-card.display-none {
+  display: none;
+}
+
+/* ===========================================================
+   灯箱 Lightbox
+   =========================================================== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: oklch(0.06 0 0 / 0.96);
+  padding: 4vmin;
+}
+.lightbox.open {
+  display: flex;
+}
+.lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* ===========================================================
+   无障碍：尊重「减少动态效果」系统设置
+   =========================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .photo-card .photo-img,
+  .photo-card .photo-overlay,
+  .photo-card {
+    transition: none;
+  }
+  .photo-card:hover .photo-img,
+  .photo-card:focus-visible .photo-img {
+    transform: none;
+  }
+}

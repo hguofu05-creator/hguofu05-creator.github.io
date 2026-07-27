@@ -1,0 +1,144 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { photos, photoUrl, srcSet, defaultSrc, type Photo } from '../../lib/photos';
+
+export function getStaticPaths() {
+  return photos.map((photo: Photo, i: number) => ({
+    params: { slug: photo.id },
+    props: {
+      photo,
+      prev: i > 0 ? photos[i - 1] : null,
+      next: i < photos.length - 1 ? photos[i + 1] : null,
+    },
+  }));
+}
+
+interface Props {
+  photo: Photo;
+  prev: Photo | null;
+  next: Photo | null;
+}
+const { photo, prev, next } = Astro.props;
+
+// 组装 EXIF 表格（仅保留 ISO 与光圈）
+const exifRows = [
+  { label: '光圈', value: photo.exif.aperture },
+  { label: 'ISO', value: photo.exif.iso },
+].filter((r) => r.value);
+---
+
+<BaseLayout title={photo.title} description={photo.story || photo.title}>
+  <article class="mx-auto max-w-5xl px-4 py-12 sm:py-16">
+    <!-- 标题区 -->
+    <header class="mb-8 reveal">
+      <p class="text-sm text-muted">{photo.location || photo.date}</p>
+      <h1 class="mt-1 font-serif text-4xl text-fg sm:text-5xl">{photo.title}</h1>
+    </header>
+
+    <!-- 大图（点击进入灯箱） -->
+    <button
+      type="button"
+      id="detail-img"
+      class="block w-full overflow-hidden rounded-sm bg-bg-2 reveal"
+      aria-label="点击查看大图"
+    >
+      <img
+        class="w-full cursor-zoom-in"
+        src={defaultSrc(photo)}
+        srcset={srcSet(photo)}
+        sizes="(min-width: 1024px) 1024px, 100vw"
+        width={photo.width}
+        height={photo.height}
+        alt={photo.title}
+      />
+    </button>
+
+    <!-- EXIF + 拍摄故事 -->
+    <div class="mt-10 grid gap-10 reveal sm:grid-cols-[200px_1fr]">
+      <aside>
+        <h2 class="mb-4 font-serif text-lg text-fg">拍摄参数</h2>
+        <dl class="space-y-2 text-sm">
+          {
+            exifRows.map((r) => (
+              <div class="flex justify-between gap-4 border-b border-white/5 pb-2">
+                <dt class="text-muted">{r.label}</dt>
+                <dd class="text-right text-fg">{r.value}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </aside>
+      <div>
+        <h2 class="mb-4 font-serif text-lg text-fg">拍摄故事</h2>
+        {
+          photo.story ? (
+            <p class="max-w-prose leading-relaxed text-fg/90">{photo.story}</p>
+          ) : (
+            <p class="text-muted">（还没写故事，去 src/data/photos.json 给这张图加 story 吧）</p>
+          )
+        }
+      </div>
+    </div>
+
+    <!-- 上一张 / 下一张 -->
+    <nav class="mt-14 flex items-center justify-between border-t border-white/5 pt-6 text-sm">
+      {
+        prev ? (
+          <a href={`/photo/${prev.id}`} class="text-muted transition-colors hover:text-fg">
+            ← {prev.title}
+          </a>
+        ) : (
+          <span />
+        )
+      }
+      <a href="/gallery" class="text-muted transition-colors hover:text-fg">返回作品集</a>
+      {
+        next ? (
+          <a href={`/photo/${next.id}`} class="text-muted transition-colors hover:text-fg">
+            {next.title} →
+          </a>
+        ) : (
+          <span />
+        )
+      }
+    </nav>
+  </article>
+
+  <!-- 灯箱 -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="大图预览">
+    <button
+      id="lightbox-close"
+      type="button"
+      class="absolute right-5 top-5 text-3xl leading-none text-fg/80 hover:text-fg"
+      aria-label="关闭"
+    >
+      ×
+    </button>
+    <img id="lightbox-img" src={photoUrl(photo, 1600)} alt={photo.title} />
+  </div>
+
+  <script>
+    const trigger = document.getElementById('detail-img');
+    const box = document.getElementById('lightbox');
+    const closeBtn = document.getElementById('lightbox-close');
+    const img = document.getElementById('lightbox-img');
+
+    function open() {
+      box?.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      box?.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    trigger?.addEventListener('click', open);
+    closeBtn?.addEventListener('click', close);
+    box?.addEventListener('click', (e) => {
+      if (e.target === box) close();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') close();
+    });
+  </script>
+</BaseLayout>

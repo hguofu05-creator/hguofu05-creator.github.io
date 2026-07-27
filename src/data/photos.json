@@ -1,0 +1,1841 @@
+[
+  {
+    "id": "IMG_20240618_154648",
+    "src": "images/photos/IMG_20240618_154648",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "云层间穿行的飞机",
+    "category": "mountain",
+    "story": "万里云海，一机独行。",
+    "location": "天空",
+    "date": "2024-06-18",
+    "featured": true,
+    "cover": true,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20240703_090409",
+    "src": "images/photos/IMG_20240703_090409",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "飞檐上的风铃",
+    "category": "city",
+    "story": "古檐翘角，风铃轻响。",
+    "location": "其他",
+    "date": "2024-07-03",
+    "featured": true,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20240704_115425",
+    "src": "images/photos/IMG_20240704_115425",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "窗框里的亭台",
+    "category": "city",
+    "story": "方寸窗棂，遥望亭台。",
+    "location": "城市",
+    "date": "2024-07-04",
+    "featured": true,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20240708_172623",
+    "src": "images/photos/IMG_20240708_172623",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "机翼下的云海",
+    "category": "mountain",
+    "story": "翼下云涛，如浪翻涌。",
+    "location": "天空",
+    "date": "2024-07-08",
+    "featured": true,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20240708_173708",
+    "src": "images/photos/IMG_20240708_173708",
+    "width": 3060,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "金色河湾航拍",
+    "category": "water",
+    "story": "航窗之外，大地披金。",
+    "location": "湖畔",
+    "date": "2024-07-08",
+    "featured": true,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20240724_191616",
+    "src": "images/photos/IMG_20240724_191616",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "晚霞中的铁塔",
+    "category": "city",
+    "story": "晚霞漫卷，铁塔静立。",
+    "location": "城市",
+    "date": "2024-07-24",
+    "featured": true,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20240724_191916",
+    "src": "images/photos/IMG_20240724_191916",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "金色的云隙光",
+    "category": "mountain",
+    "story": "光破云层，天际流金。",
+    "location": "天空",
+    "date": "2024-07-24",
+    "featured": true,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2.2"
+    }
+  },
+  {
+    "id": "IMG_20240724_192330",
+    "src": "images/photos/IMG_20240724_192330",
+    "width": 4096,
+    "height": 2304,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "燃烧般的晚霞",
+    "category": "mountain",
+    "story": "苍穹燃尽，暮色如火。",
+    "location": "天空",
+    "date": "2024-07-24",
+    "featured": true,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 160",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "IMG_20240809_183843_3",
+    "src": "images/photos/IMG_20240809_183843_3",
+    "width": 4096,
+    "height": 2304,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "江城夕照",
+    "category": "water",
+    "story": "一江碎金，半城剪影。",
+    "location": "城市",
+    "date": "2024-08-09",
+    "featured": true,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 160",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "IMG_20240910_174302",
+    "src": "images/photos/IMG_20240910_174302",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "水面倒映的云",
+    "category": "water",
+    "story": "云落水中，天地倒置。",
+    "location": "湿地",
+    "date": "2024-09-10",
+    "featured": true,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 80",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241002_173202",
+    "src": "images/photos/IMG_20241002_173202",
+    "width": 3900,
+    "height": 2195,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "山湖边的身影",
+    "category": "people",
+    "story": "远山含黛，伊人伫立。",
+    "location": "湖畔",
+    "date": "2024-10-02",
+    "featured": true,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 500",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241005_201546",
+    "src": "images/photos/IMG_20241005_201546",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "夜色中的牌坊",
+    "category": "city",
+    "story": "牌坊高耸，灯火通明。",
+    "location": "城市",
+    "date": "2024-10-05",
+    "featured": true,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 4000",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241019_203150",
+    "src": "images/photos/IMG_20241019_203150",
+    "width": 3072,
+    "height": 3072,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "路灯下的小蛙",
+    "category": "forest",
+    "story": "夜色微茫，小蛙独坐。",
+    "location": "其他",
+    "date": "2024-10-19",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 160",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241023_112903",
+    "src": "images/photos/IMG_20241023_112903",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "花丛前的黑天鹅",
+    "category": "water",
+    "story": "黑天鹅过，花影摇曳。",
+    "location": "湖畔",
+    "date": "2024-10-23",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241023_181137",
+    "src": "images/photos/IMG_20241023_181137",
+    "width": 3060,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "红霞满天的黄昏",
+    "category": "mountain",
+    "story": "长空染赤，万物剪影。",
+    "location": "城市",
+    "date": "2024-10-23",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 100",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241025_181547",
+    "src": "images/photos/IMG_20241025_181547",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "暮色渐变的云天",
+    "category": "mountain",
+    "story": "天际微醺，紫粉交织。",
+    "location": "天空",
+    "date": "2024-10-25",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 800",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241027_172704",
+    "src": "images/photos/IMG_20241027_172704",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "路灯与云树",
+    "category": "city",
+    "story": "云淡风轻，街灯静立。",
+    "location": "城市",
+    "date": "2024-10-27",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241105_113502",
+    "src": "images/photos/IMG_20241105_113502",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "北江大堤的石碑",
+    "category": "city",
+    "story": "芳草萋萋，石碑无言。",
+    "location": "乡村",
+    "date": "2024-11-05",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241107_111336",
+    "src": "images/photos/IMG_20241107_111336",
+    "width": 4096,
+    "height": 3072,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "手心的秋叶",
+    "category": "people",
+    "story": "掌心一片，秋意正浓。",
+    "location": "森林",
+    "date": "2024-11-07",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "IMG_20241108_095200",
+    "src": "images/photos/IMG_20241108_095200",
+    "width": 2296,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "秋日的光影",
+    "category": "forest",
+    "story": "光影斑驳，秋意静好。",
+    "location": "森林",
+    "date": "2024-11-08",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241108_112659",
+    "src": "images/photos/IMG_20241108_112659",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "枫叶斑斓的树冠",
+    "category": "forest",
+    "story": "半树红火，半树青葱。",
+    "location": "森林",
+    "date": "2024-11-08",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241108_113504",
+    "src": "images/photos/IMG_20241108_113504",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "逆光下的青枫",
+    "category": "forest",
+    "story": "光透叶脉，洒下一地碎金。",
+    "location": "森林",
+    "date": "2024-11-08",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 100",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241108_120454",
+    "src": "images/photos/IMG_20241108_120454",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "蓝天下的红枫",
+    "category": "forest",
+    "story": "一枝红枫，半抹天蓝。",
+    "location": "森林",
+    "date": "2024-11-08",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241110_124104",
+    "src": "images/photos/IMG_20241110_124104",
+    "width": 3072,
+    "height": 3072,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "枫红半掩澹远亭",
+    "category": "forest",
+    "story": "朱檐半卷红枫，一匾书尽澹远。",
+    "location": "城市",
+    "date": "2024-11-10",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241120_170848",
+    "src": "images/photos/IMG_20241120_170848",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "湖面黑天鹅",
+    "category": "water",
+    "story": "黑羽拂水，漾起层层涟漪。",
+    "location": "湖畔",
+    "date": "2024-11-20",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 320",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241124_093159",
+    "src": "images/photos/IMG_20241124_093159",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "海边的小男孩",
+    "category": "people",
+    "story": "小小身影，凝望大海。",
+    "location": "海边",
+    "date": "2024-11-24",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241124_093256",
+    "src": "images/photos/IMG_20241124_093256",
+    "width": 3060,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "戴绿帽的少年",
+    "category": "people",
+    "story": "一顶绿帽，一汪蓝海。",
+    "location": "海边",
+    "date": "2024-11-24",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241124_093420",
+    "src": "images/photos/IMG_20241124_093420",
+    "width": 4096,
+    "height": 3072,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "沙滩上的小草",
+    "category": "water",
+    "story": "海风过处，一株小草兀自生长。",
+    "location": "海边",
+    "date": "2024-11-24",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "IMG_20241124_094532",
+    "src": "images/photos/IMG_20241124_094532",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "沙滩上的一家人",
+    "category": "people",
+    "story": "夫妻伫立，小儿拾贝。",
+    "location": "海边",
+    "date": "2024-11-24",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241124_094548",
+    "src": "images/photos/IMG_20241124_094548",
+    "width": 3060,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "望向海的双背影",
+    "category": "people",
+    "story": "两人无言，海风知意。",
+    "location": "海边",
+    "date": "2024-11-24",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241126_125852",
+    "src": "images/photos/IMG_20241126_125852",
+    "width": 2296,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "繁花伴书声",
+    "category": "forest",
+    "story": "窗外繁花，窗内书声。",
+    "location": "城市",
+    "date": "2024-11-26",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241127_095016",
+    "src": "images/photos/IMG_20241127_095016",
+    "width": 3060,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "春花映校园",
+    "category": "forest",
+    "story": "一树繁花相伴，满楼春色盈窗。",
+    "location": "城市",
+    "date": "2024-11-27",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241128_102405",
+    "src": "images/photos/IMG_20241128_102405",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "桥畔独行的人",
+    "category": "people",
+    "story": "一人一桥，横跨江面。",
+    "location": "湖畔",
+    "date": "2024-11-28",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241128_103547",
+    "src": "images/photos/IMG_20241128_103547",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "水边的两个身影",
+    "category": "people",
+    "story": "两个人，一片水，对坐无言。",
+    "location": "湖畔",
+    "date": "2024-11-28",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241128_104429",
+    "src": "images/photos/IMG_20241128_104429",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "江上轻舟泊花岸",
+    "category": "water",
+    "story": "一叶扁舟，泊在花影里。",
+    "location": "湖畔",
+    "date": "2024-11-28",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 800",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241128_160514",
+    "src": "images/photos/IMG_20241128_160514",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "礁石边的白鹭",
+    "category": "water",
+    "story": "几羽白鹭，立于静水畔。",
+    "location": "湿地",
+    "date": "2024-11-28",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 400",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241130_132221",
+    "src": "images/photos/IMG_20241130_132221",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "葡风街角的灯",
+    "category": "city",
+    "story": "黄墙古灯下，写满街巷旧事。",
+    "location": "城市",
+    "date": "2024-11-30",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241208_181816",
+    "src": "images/photos/IMG_20241208_181816",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "暮色中的工地",
+    "category": "city",
+    "story": "余晖染天，树影伴工机。",
+    "location": "城市",
+    "date": "2024-12-08",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 6400",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20241224_153837",
+    "src": "images/photos/IMG_20241224_153837",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "广州塔上的飞机",
+    "category": "city",
+    "story": "钢铁高塔，仰望云端。",
+    "location": "城市",
+    "date": "2024-12-24",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250104_111156",
+    "src": "images/photos/IMG_20250104_111156",
+    "width": 2296,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "蓝天下的白梅",
+    "category": "forest",
+    "story": "一枝素梅，向天而绽。",
+    "location": "森林",
+    "date": "2025-01-04",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 3200",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250104_111241",
+    "src": "images/photos/IMG_20250104_111241",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "枝头独自绽放",
+    "category": "forest",
+    "story": "一朵白梅，半开半合。",
+    "location": "森林",
+    "date": "2025-01-04",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 3200",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250104_111304",
+    "src": "images/photos/IMG_20250104_111304",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "梅花引来蜜蜂",
+    "category": "forest",
+    "story": "一花一蜂，各自忙碌。",
+    "location": "森林",
+    "date": "2025-01-04",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 3200",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250104_111919",
+    "src": "images/photos/IMG_20250104_111919",
+    "width": 4096,
+    "height": 2304,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "蓝天下的一朵白梅",
+    "category": "forest",
+    "story": "一枝素白，半壁晴空。",
+    "location": "其他",
+    "date": "2025-01-04",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "IMG_20250128_105538",
+    "src": "images/photos/IMG_20250128_105538",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "风中的芦苇",
+    "category": "forest",
+    "story": "枯穗轻扬，写给蓝天的诗。",
+    "location": "湿地",
+    "date": "2025-01-28",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250130_192548",
+    "src": "images/photos/IMG_20250130_192548",
+    "width": 3060,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "烟花升空",
+    "category": "city",
+    "story": "一瞬绽放，漫天星雨。",
+    "location": "城市",
+    "date": "2025-01-30",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 3200",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250205_115628",
+    "src": "images/photos/IMG_20250205_115628",
+    "width": 2296,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "桥下的三个人",
+    "category": "people",
+    "story": "江风过桥，三人同行。",
+    "location": "城市",
+    "date": "2025-02-05",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250212_202155",
+    "src": "images/photos/IMG_20250212_202155",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "栏杆后的烟花",
+    "category": "city",
+    "story": "街边栏杆前，烟火正盛。",
+    "location": "城市",
+    "date": "2025-02-12",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 500",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250212_202339",
+    "src": "images/photos/IMG_20250212_202339",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "玩仙女棒的小女孩",
+    "category": "people",
+    "story": "小手一抖，星光洒落。",
+    "location": "城市",
+    "date": "2025-02-12",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250212_204649",
+    "src": "images/photos/IMG_20250212_204649",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "铁栏后的烟花盛放",
+    "category": "city",
+    "story": "火树银花，一夜欢腾。",
+    "location": "城市",
+    "date": "2025-02-12",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250316_122352",
+    "src": "images/photos/IMG_20250316_122352",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "黄花与街灯",
+    "category": "forest",
+    "story": "一树黄花，半盏街灯。",
+    "location": "城市",
+    "date": "2025-03-16",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250504_132733",
+    "src": "images/photos/IMG_20250504_132733",
+    "width": 3072,
+    "height": 3072,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "围栏里的孔雀",
+    "category": "forest",
+    "story": "林间一只蓝羽回眸。",
+    "location": "森林",
+    "date": "2025-05-04",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 160",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250531_101927",
+    "src": "images/photos/IMG_20250531_101927",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "郑裕彤楼",
+    "category": "city",
+    "story": "楼宇静立，百年树人。",
+    "location": "城市",
+    "date": "2025-05-31",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250531_160219",
+    "src": "images/photos/IMG_20250531_160219",
+    "width": 3072,
+    "height": 3072,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "海风与矿泉水",
+    "category": "water",
+    "story": "礁石海风，半瓶山水。",
+    "location": "海边",
+    "date": "2025-05-31",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "IMG_20250611_071928",
+    "src": "images/photos/IMG_20250611_071928",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "林间的禁供水牌",
+    "category": "forest",
+    "story": "林深静谧，一牌伫立。",
+    "location": "森林",
+    "date": "2025-06-11",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 4000",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250708_193007",
+    "src": "images/photos/IMG_20250708_193007",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "紫红晚霞",
+    "category": "city",
+    "story": "霞光染天半壁紫。",
+    "location": "城市",
+    "date": "2025-07-08",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 640",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250725_192313",
+    "src": "images/photos/IMG_20250725_192313",
+    "width": 1844,
+    "height": 4096,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "暮色湿地的云",
+    "category": "water",
+    "story": "晚霞浸水，湿地披霞。",
+    "location": "湖畔",
+    "date": "2025-07-25",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 1600",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "IMG_20250725_192350",
+    "src": "images/photos/IMG_20250725_192350",
+    "width": 4096,
+    "height": 1844,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "暮色中的城市水岸",
+    "category": "water",
+    "story": "霞映水面，远城如剪影。",
+    "location": "湖畔",
+    "date": "2025-07-25",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 2500",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "IMG_20250820_130453",
+    "src": "images/photos/IMG_20250820_130453",
+    "width": 3072,
+    "height": 3072,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "绿叶间的粉花",
+    "category": "forest",
+    "story": "一朵粉霞，落入绿海。",
+    "location": "森林",
+    "date": "2025-08-20",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250821_181847",
+    "src": "images/photos/IMG_20250821_181847",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "暮云如峰",
+    "category": "mountain",
+    "story": "云涌如山，天光染金。",
+    "location": "天空",
+    "date": "2025-08-21",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 100",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250821_184332",
+    "src": "images/photos/IMG_20250821_184332",
+    "width": 2296,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "电塔下的晚霞",
+    "category": "city",
+    "story": "红霞一抹，铁塔静立。",
+    "location": "乡村",
+    "date": "2025-08-21",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 400",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250821_184517",
+    "src": "images/photos/IMG_20250821_184517",
+    "width": 2296,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "乡路电线杆",
+    "category": "city",
+    "story": "乡间小路，电杆拉长暮色。",
+    "location": "乡村",
+    "date": "2025-08-21",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 640",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250822_190604",
+    "src": "images/photos/IMG_20250822_190604",
+    "width": 2304,
+    "height": 4096,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "暮色中的远塔",
+    "category": "city",
+    "story": "晚霞漫天，铁塔剪影。",
+    "location": "乡村",
+    "date": "2025-08-22",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 100",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "IMG_20250823_153917",
+    "src": "images/photos/IMG_20250823_153917",
+    "width": 2304,
+    "height": 4096,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "蓝天堆云",
+    "category": "mountain",
+    "story": "蓝天堆云，似山似海。",
+    "location": "天空",
+    "date": "2025-08-23",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "IMG_20250902_181721",
+    "src": "images/photos/IMG_20250902_181721",
+    "width": 4080,
+    "height": 2296,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "铁塔下的城市天际线",
+    "category": "city",
+    "story": "暮色中铁塔静立，城市在远方呼吸。",
+    "location": "山间",
+    "date": "2025-09-02",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20250902_183736",
+    "src": "images/photos/IMG_20250902_183736",
+    "width": 4096,
+    "height": 2304,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "晚霞中的积雨云",
+    "category": "mountain",
+    "story": "云如山峰般隆起，吞没最后一缕光。",
+    "location": "天空",
+    "date": "2025-09-02",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 64",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "IMG_20251122_180712",
+    "src": "images/photos/IMG_20251122_180712",
+    "width": 2296,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "弯月与晚霞",
+    "category": "mountain",
+    "story": "一钩新月挂在燃烧的天边。",
+    "location": "湖畔",
+    "date": "2025-11-22",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 800",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "IMG_20260717_180647",
+    "src": "images/photos/IMG_20260717_180647",
+    "width": 2730,
+    "height": 3825,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "停与行",
+    "category": "city",
+    "story": "蓝天之下，路牌指向未知的方向。",
+    "location": "其他",
+    "date": "2026-07-17",
+    "featured": false,
+    "cover": false,
+    "exif": {}
+  },
+  {
+    "id": "MVIMG_20240721_192458",
+    "src": "images/photos/MVIMG_20240721_192458",
+    "width": 4096,
+    "height": 2304,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "城市黄昏的火烧云",
+    "category": "mountain",
+    "story": "整座城市被染成温柔的粉紫色。",
+    "location": "城市",
+    "date": "2024-07-21",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 1600",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "MVIMG_20250316_143554",
+    "src": "images/photos/MVIMG_20250316_143554",
+    "width": 3060,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "窗外的蓝天与绿意",
+    "category": "forest",
+    "story": "隔着纱窗，世界依然明亮。",
+    "location": "其他",
+    "date": "2025-03-16",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "MVIMG_20250425_114955",
+    "src": "images/photos/MVIMG_20250425_114955",
+    "width": 3072,
+    "height": 3072,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "石缝中的长春花",
+    "category": "forest",
+    "story": "雨后绽放，每一瓣都承载着水光。",
+    "location": "其他",
+    "date": "2025-04-25",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 125",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "MVIMG_20250531_110142",
+    "src": "images/photos/MVIMG_20250531_110142",
+    "width": 4080,
+    "height": 3060,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "车窗外的山海",
+    "category": "water",
+    "story": "山海之间，不过一窗之隔。",
+    "location": "海边",
+    "date": "2025-05-31",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "MVIMG_20250531_114246",
+    "src": "images/photos/MVIMG_20250531_114246",
+    "width": 4096,
+    "height": 2304,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "此段八公里",
+    "category": "mountain",
+    "story": "山路漫漫，前方还有八公里。",
+    "location": "山间",
+    "date": "2025-05-31",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "MVIMG_20250725_144311",
+    "src": "images/photos/MVIMG_20250725_144311",
+    "width": 3072,
+    "height": 4096,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "山间公路的风景",
+    "category": "mountain",
+    "story": "沿着山路前行，风景在窗外流转。",
+    "location": "山间",
+    "date": "2025-07-25",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 80",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "MVIMG_20250814_121633",
+    "src": "images/photos/MVIMG_20250814_121633",
+    "width": 3072,
+    "height": 3072,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "晴空下的云朵",
+    "category": "mountain",
+    "story": "白云悠悠，天空广阔无垠。",
+    "location": "天空",
+    "date": "2025-08-14",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 80",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "MVIMG_20250829_193628",
+    "src": "images/photos/MVIMG_20250829_193628",
+    "width": 2304,
+    "height": 4096,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "夜色中的古塔",
+    "category": "city",
+    "story": "金光层层叠起，照亮千年的轮廓。",
+    "location": "其他",
+    "date": "2025-08-29",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 320",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "MVIMG_20250830_191135",
+    "src": "images/photos/MVIMG_20250830_191135",
+    "width": 2304,
+    "height": 4096,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "巨龙腾空",
+    "category": "people",
+    "story": "龙影之下，人潮涌动如织。",
+    "location": "城市",
+    "date": "2025-08-30",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 320",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "MVIMG_20260211_121614",
+    "src": "images/photos/MVIMG_20260211_121614",
+    "width": 2304,
+    "height": 4096,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "求婚时刻",
+    "category": "people",
+    "story": "单膝跪地，许下一生的承诺。",
+    "location": "其他",
+    "date": "2026-02-11",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "MVIMG_20260219_164814",
+    "src": "images/photos/MVIMG_20260219_164814",
+    "width": 2304,
+    "height": 4096,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "电线杆与蓝天",
+    "category": "city",
+    "story": "几条电线划过晴空，安静而笔直。",
+    "location": "乡村",
+    "date": "2026-02-19",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "MVIMG_20260219_173803",
+    "src": "images/photos/MVIMG_20260219_173803",
+    "width": 2304,
+    "height": 4096,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "傍晚的天空",
+    "category": "mountain",
+    "story": "天色渐暗，云层开始沉淀。",
+    "location": "其他",
+    "date": "2026-02-19",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 125",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "MVIMG_20260430_192017",
+    "src": "images/photos/MVIMG_20260430_192017",
+    "width": 4096,
+    "height": 2304,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "暮色四合的阳台",
+    "category": "forest",
+    "story": "天际从靛蓝渐变到橙红，夜来了。",
+    "location": "其他",
+    "date": "2026-04-30",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 320",
+      "aperture": "f/1.6"
+    }
+  },
+  {
+    "id": "MVIMG_20260512_151419",
+    "src": "images/photos/MVIMG_20260512_151419",
+    "width": 2296,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "湖畔独坐看山人",
+    "category": "people",
+    "story": "戴草帽的人静静坐着，山水都在眼前。",
+    "location": "湖畔",
+    "date": "2026-05-12",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "MVIMG_20260702_184357",
+    "src": "images/photos/MVIMG_20260702_184357",
+    "width": 2296,
+    "height": 4080,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "云涌楼头",
+    "category": "city",
+    "story": "云层翻滚如海，吞没城市的屋顶。",
+    "location": "城市",
+    "date": "2026-07-02",
+    "featured": false,
+    "cover": false,
+    "exif": {
+      "iso": "ISO 50",
+      "aperture": "f/2"
+    }
+  },
+  {
+    "id": "mmexport1731676944796",
+    "src": "images/photos/mmexport1731676944796",
+    "width": 2707,
+    "height": 2753,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "阳光下的绿叶",
+    "category": "forest",
+    "story": "叶尖泛着金光，风里都是夏天的味道。",
+    "location": "其他",
+    "date": "2024-11-15",
+    "featured": false,
+    "cover": false,
+    "exif": {}
+  },
+  {
+    "id": "mmexport1738644028514",
+    "src": "images/photos/mmexport1738644028514",
+    "width": 3060,
+    "height": 4082,
+    "sizes": [
+      400,
+      800,
+      1600
+    ],
+    "title": "窗台上的布偶猫",
+    "category": "forest",
+    "story": "阳光落在白毛上，它眯着眼打盹。",
+    "location": "其他",
+    "date": "2025-02-04",
+    "featured": false,
+    "cover": false,
+    "exif": {}
+  }
+]

@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PhotoCard from '../components/PhotoCard.astro';
+import CategoryFilter from '../components/CategoryFilter.astro';
+import { photos } from '../lib/photos';
+
+// 注意：这里直接渲染全部照片，分类筛选由前端 CategoryFilter 组件完成（带平滑过渡）
+---
+
+<BaseLayout title="作品集" description="自然风光与人文纪实摄影作品集">
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:py-20">
+    <header class="mb-8">
+      <h1 class="font-serif text-4xl text-fg">作品集</h1>
+      <p class="mt-2 text-muted">共 {photos.length} 幅作品 · 点击分类筛选</p>
+    </header>
+
+    <!-- 分类筛选 -->
+    <div class="mb-10">
+      <CategoryFilter />
+    </div>
+
+    <!-- 三列自适应网格：桌面 3 / 平板 2 / 手机 1 -->
+    <div id="photo-grid" class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {photos.map((p) => <PhotoCard photo={p} />)}
+    </div>
+  </section>
+</BaseLayout>

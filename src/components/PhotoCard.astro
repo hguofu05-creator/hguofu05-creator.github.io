@@ -1,0 +1,39 @@
+---
+import type { Photo } from '../lib/photos';
+import { srcSet, defaultSrc } from '../lib/photos';
+
+interface Props {
+  photo: Photo;
+  /** 额外 class，例如瀑布流时传入 'mb-4 break-inside-avoid' */
+  class?: string;
+}
+
+const { photo, class: className } = Astro.props;
+---
+
+<a
+  href={`/photo/${photo.id}`}
+  class:list={['photo-card group relative block overflow-hidden rounded-sm bg-bg-2 reveal', className]}
+  data-category={photo.category}
+  aria-label={photo.title}
+>
+  <img
+    class="photo-img w-full"
+    src={defaultSrc(photo)}
+    srcset={srcSet(photo)}
+    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+    width={photo.width}
+    height={photo.height}
+    loading="lazy"
+    decoding="async"
+    alt={photo.title}
+  />
+  <div
+    class="photo-overlay pointer-events-none absolute inset-0 flex items-end bg-gradient-to-t from-black/75 via-black/10 to-transparent p-4"
+  >
+    <div>
+      <h3 class="font-serif text-base text-fg sm:text-lg">{photo.title}</h3>
+      {photo.location && <p class="mt-0.5 text-xs text-muted">{photo.location}</p>}
+    </div>
+  </div>
+</a>
