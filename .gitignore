@@ -10,3 +10,5 @@ Thumbs.db
 # 原始大图不入库（单独保存在你的桌面/移动硬盘）
 # 已生成的 WebP 在 public/images/photos/ ，需要入库
 src/assets/raw/
+# 项目本地记忆/元信息不进公开仓库
+.workbuddy/

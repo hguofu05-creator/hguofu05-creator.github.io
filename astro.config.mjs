@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind';
 //    推荐用「用户页」：仓库名叫 <你的用户名>.github.io，
 //    那样网站地址就是 https://<你的用户名>.github.io ，base 保持默认即可。
 export default defineConfig({
-  site: 'https://YOURUSERNAME.github.io',
+  site: 'https://hguofu05-creator.github.io',
 
   // 如果你用的是「项目页」（仓库名不是 <用户名>.github.io）：
   // 1) 把上面的 site 改成 https://<用户名>.github.io/<仓库名>/
