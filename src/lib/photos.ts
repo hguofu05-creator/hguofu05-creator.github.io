@@ -42,7 +42,7 @@ export interface Photo {
 export const photos = raw as Photo[];
 
 /** 可选尺寸（与生成脚本保持一致） */
-export const SIZES = [400, 800, 1600] as const;
+export const SIZES = [2000, 4080] as const;
 
 /** 拼接某个尺寸的绝对路径，例如 /images/photos/xxx-800.webp */
 export function photoUrl(p: Photo, size: number): string {
@@ -54,9 +54,15 @@ export function srcSet(p: Photo): string {
   return p.sizes.map((s) => `${photoUrl(p, s)} ${s}w`).join(', ');
 }
 
-/** 默认展示用的图（优先 800，否则最大可用尺寸） */
+/** 默认展示用的图（最大可用尺寸 = 原生分辨率，用于详情页大图与灯箱） */
 export function defaultSrc(p: Photo): string {
-  const size = p.sizes.includes(800) ? 800 : p.sizes[p.sizes.length - 1];
+  const size = p.sizes[p.sizes.length - 1];
+  return photoUrl(p, size);
+}
+
+/** 网格缩略图（最小尺寸，用于列表快速加载；点击进详情/灯箱才是原画质） */
+export function thumbSrc(p: Photo): string {
+  const size = p.sizes[0];
   return photoUrl(p, size);
 }
 

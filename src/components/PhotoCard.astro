@@ -1,10 +1,10 @@
 ---
 import type { Photo } from '../lib/photos';
-import { srcSet, defaultSrc } from '../lib/photos';
+import { srcSet, thumbSrc } from '../lib/photos';
 
 interface Props {
   photo: Photo;
-  /** 额外 class，例如瀑布流时传入 'mb-4 break-inside-avoid' */
+  /** 额外 class（瀑布流所需的 mb-4 break-inside-avoid 已内置于基础样式） */
   class?: string;
 }
 
@@ -13,13 +13,13 @@ const { photo, class: className } = Astro.props;
 
 <a
   href={`/photo/${photo.id}.html`}
-  class:list={['photo-card group relative block overflow-hidden rounded-sm bg-bg-2 reveal', className]}
+  class:list={['photo-card group relative block overflow-hidden rounded-sm bg-bg-2 reveal break-inside-avoid mb-4', className]}
   data-category={photo.category}
   aria-label={photo.title}
 >
   <img
     class="photo-img w-full"
-    src={defaultSrc(photo)}
+    src={thumbSrc(photo)}
     srcset={srcSet(photo)}
     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
     width={photo.width}
