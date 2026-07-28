@@ -22,6 +22,24 @@ const DISPLAY_W = 2000;
 const FULL_QUALITY = 95;
 const DISPLAY_QUALITY = 90;
 
+// 原生大图上的平铺水印（不影响浏览，防止盗用）
+// 如需调整文案/透明度，只改这里即可
+const WATERMARK_TEXT = '© Leo · hguofu05-creator.github.io';
+const WATERMARK_OPACITY = 0.08;
+
+function makeWatermark(w, h) {
+  const fontSize = Math.max(14, Math.round(w / 45));
+  const textW = WATERMARK_TEXT.length * fontSize * 0.52;
+  const tileW = Math.round(textW * 1.35);
+  const tileH = Math.round(fontSize * 3.4);
+  const svg =
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">` +
+    `<defs><pattern id="wm" width="${tileW}" height="${tileH}" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">` +
+    `<text x="0" y="${Math.round(tileH / 2)}" font-family="sans-serif" font-size="${fontSize}" font-weight="600" fill="#ffffff" fill-opacity="${WATERMARK_OPACITY}">${WATERMARK_TEXT}</text>` +
+    `</pattern></defs><rect width="100%" height="100%" fill="url(#wm)"/></svg>`;
+  return Buffer.from(svg);
+}
+
 function sanitize(name) {
   return name.replace(/[^a-zA-Z0-9_-]/g, '-');
 }
@@ -54,9 +72,13 @@ for (const p of photos) {
   const w = meta.width || 0;
   const h = meta.height || 0;
 
-  // 1) 全尺寸（原生分辨率，原画质）
+  // 1) 全尺寸（原生分辨率，原画质 + 平铺水印，仅打在可下载的大图上）
   const fullName = `${p.id}-${w}.webp`;
-  await sharp(srcPath).webp({ quality: FULL_QUALITY, effort: 6 }).toFile(path.join(OUT_DIR, fullName));
+  const wmPng = await sharp(makeWatermark(w, h)).png().toBuffer();
+  await sharp(srcPath)
+    .composite([{ input: wmPng, top: 0, left: 0, blend: 'over' }])
+    .webp({ quality: FULL_QUALITY, effort: 6 })
+    .toFile(path.join(OUT_DIR, fullName));
 
   // 2) 网格缩略图（仅当原图比展示尺寸更大时才生成，否则与全尺寸相同）
   const sizes = [w];

@@ -36,6 +36,7 @@ export const SITE = {
   /** 关于页：设备清单 */
   gear: [
     '相机：Sony A7 IV',
+    '相机：佳能 D800',
     '主力镜头：FE 24-70mm F2.8 GM',
     '长焦：FE 100-400mm F4.5-5.6 GM',
     '三脚架：捷信 GT1545T',
