@@ -25,7 +25,8 @@ const DISPLAY_QUALITY = 90;
 // 原生大图上的个人角标水印（不影响浏览，防止盗用）
 // 如需换水印，先运行：node scripts/prepare-watermark.mjs <新水印图片路径>
 const WATERMARK_PATH = path.join(__dirname, 'watermark.png');
-const WATERMARK_WIDTH_RATIO = 0.20; // 水印宽度占照片宽度的比例
+const WATERMARK_WIDTH_RATIO = 0.22; // 水印宽度占照片宽度的比例
+const WATERMARK_MARGIN_RATIO = 0.02; // 水印距照片边的比例（更贴角）
 
 async function makeLogoWatermark(photoW, photoH) {
   if (!fs.existsSync(WATERMARK_PATH)) {
@@ -34,7 +35,7 @@ async function makeLogoWatermark(photoW, photoH) {
   const wmWidth = Math.round(photoW * WATERMARK_WIDTH_RATIO);
   const wmBuffer = await sharp(WATERMARK_PATH).resize(wmWidth, null, { fit: 'inside' }).png().toBuffer();
   const wmMeta = await sharp(wmBuffer).metadata();
-  const margin = Math.round(photoW * 0.025);
+  const margin = Math.round(photoW * WATERMARK_MARGIN_RATIO);
   return {
     input: wmBuffer,
     left: photoW - wmMeta.width - margin,

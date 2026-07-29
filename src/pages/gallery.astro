@@ -4,14 +4,26 @@ import PhotoCard from '../components/PhotoCard.astro';
 import CategoryFilter from '../components/CategoryFilter.astro';
 import { photos } from '../lib/photos';
 
-// 注意：这里直接渲染全部照片，分类筛选由前端 CategoryFilter 组件完成（带平滑过渡）
+// 作品集页按主题分组展示（不含聚合分类 all/nature）
+const SECTION_ORDER = [
+  { key: 'mountain', label: '山岳' },
+  { key: 'water', label: '水域' },
+  { key: 'forest', label: '森林' },
+  { key: 'city', label: '城市' },
+  { key: 'people', label: '人文' },
+] as const;
+
+const sections = SECTION_ORDER.map((s) => ({
+  ...s,
+  items: photos.filter((p) => p.category === s.key),
+})).filter((s) => s.items.length > 0);
 ---
 
 <BaseLayout title="作品集" description="自然风光与人文纪实摄影作品集">
   <section class="mx-auto max-w-6xl px-4 py-16 sm:py-20">
     <header class="mb-8">
       <h1 class="font-serif text-4xl text-fg">作品集</h1>
-      <p class="mt-2 text-muted">共 {photos.length} 幅作品 · 点击分类筛选</p>
+      <p class="mt-2 text-muted">共 {photos.length} 幅作品 · 按主题分组排列</p>
     </header>
 
     <!-- 分类筛选 -->
@@ -19,9 +31,22 @@ import { photos } from '../lib/photos';
       <CategoryFilter />
     </div>
 
-    <!-- 瀑布流：不同比例自然排列，无黑边/空位；顶部平整、列间等距 -->
-    <div id="photo-grid" class="columns-1 gap-4 sm:columns-2 lg:columns-3">
-      {photos.map((p) => <PhotoCard photo={p} />)}
-    </div>
+    <!-- 按主题分组：同类型作品集中在一起，每组内部仍为瀑布流 -->
+    {
+      sections.map((sec) => (
+        <section class="gallery-section mb-14" data-section={sec.key}>
+          <div class="mb-6 flex items-center gap-4">
+            <h2 class="font-serif whitespace-nowrap text-2xl text-fg">{sec.label}</h2>
+            <span class="text-sm text-muted">{sec.items.length} 幅</span>
+            <span class="h-px flex-1 bg-white/10" />
+          </div>
+          <div class="columns-1 gap-4 sm:columns-2 lg:columns-3">
+            {sec.items.map((p) => (
+              <PhotoCard photo={p} />
+            ))}
+          </div>
+        </section>
+      ))
+    }
   </section>
 </BaseLayout>

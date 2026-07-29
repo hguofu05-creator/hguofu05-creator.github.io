@@ -1,6 +1,6 @@
 ---
 import { CATEGORIES } from '../lib/photos';
-// 筛选按钮：点击后过滤 #photo-grid 里带 data-category 的卡片
+// 分类筛选：点击后过滤带 data-category 的卡片，并同步隐藏空分组
 ---
 
 <div class="flex flex-wrap gap-2" role="tablist" aria-label="作品分类筛选">
@@ -24,20 +24,22 @@ import { CATEGORIES } from '../lib/photos';
 </div>
 
 <script>
-  const grid = document.getElementById('photo-grid');
   const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
-  if (grid && buttons.length) {
-    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-category]'));
+  if (buttons.length) {
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-category]'));
+    const sections = Array.from(document.querySelectorAll<HTMLElement>('.gallery-section'));
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const HIDE_DELAY = reduce ? 0 : 350;
 
+    function shouldShow(category: string, key: string) {
+      return key === 'all' || (key === 'nature' && category !== 'people') || category === key;
+    }
+
     function applyFilter(key: string) {
+      // 1) 卡片显隐过渡
       cards.forEach((card) => {
-        const cat = card.dataset.category;
-        const show =
-          key === 'all' ||
-          (key === 'nature' && cat !== 'people') ||
-          cat === key;
+        const cat = card.dataset.category || '';
+        const show = shouldShow(cat, key);
         if (show) {
           card.classList.remove('display-none');
           // 强制回流，让 transition 生效
@@ -46,6 +48,20 @@ import { CATEGORIES } from '../lib/photos';
         } else {
           card.classList.add('is-hidden');
           window.setTimeout(() => card.classList.add('display-none'), HIDE_DELAY);
+        }
+      });
+
+      // 2) 同步分组标题区：有可见卡片的立即显示；会变空的分组等过渡结束后隐藏
+      sections.forEach((sec) => {
+        const hasVisible = Array.from(sec.querySelectorAll<HTMLElement>('[data-category]')).some(
+          (card) => shouldShow(card.dataset.category || '', key)
+        );
+        if (hasVisible) {
+          sec.hidden = false;
+        } else {
+          window.setTimeout(() => {
+            sec.hidden = true;
+          }, HIDE_DELAY);
         }
       });
     }
